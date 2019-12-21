@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>swiper插件</title>		
+		<script src="swiper.js"></script>
+		<link href="swiper.css" rel="stylesheet" />		
+	</head>
+	<body>
+		<div id="box"></div>
+	</body>
+	<script>
+		var data={
+			picInfo:[//展示的图片
+			{"image_800":"https\u003A\u002F\u002Fs10.mogucdn.com\u002Fmlcdn\u002Fc45406\u002F191201_63lk0gh12kkgk0a0d05lahc8hgj0l_1125x389.jpg"},
+			{"image_800":"https\u003A\u002F\u002Fs10.mogucdn.com\u002Fmlcdn\u002Fc45406\u002F191201_1e97d14gagigc4d8f226e4kd3jh18_1125x390.jpg"},
+			{"image_800":"https\u003A\u002F\u002Fs10.mogucdn.com\u002Fmlcdn\u002Fc45406\u002F191201_71lkk82f7lh1ljc0ddfda5a2glf3f_1125x390.jpg"}
+			],
+			height:'100',//轮播图高度
+		};
+		new swiper({
+			el:'#box',//包裹轮播图的最外层div
+			data:data,//轮播图中要展示的数据
+		})
+	</script>
+</html>
